@@ -58,8 +58,7 @@ public class ImageLabelsEndpoint {
     }
 
     private Boolean isMetal(final Set<String> labels) {
-        final Set<String> glassLabels = Set.of("Aluminium", "Metal", "Aluminium can", "Tin", "Tin can", "Cylinder9+" +
-                "63.");
+        final Set<String> glassLabels = Set.of("Aluminium", "Metal", "Aluminium can", "Tin", "Tin can", "Cylinder");
         return labels.stream()
                 .anyMatch(glassLabels::contains);
     }
